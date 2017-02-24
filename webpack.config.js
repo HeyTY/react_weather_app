@@ -1,6 +1,8 @@
 module.exports = {
 	//tell where to process the code
 	entry: [
+		'script!jquery/dist/jquery.min.js',
+		'script!bootstrap/dist/js/bootstrap.min.js',
 		'./app/app.jsx'
 	],
 	//specify the output
