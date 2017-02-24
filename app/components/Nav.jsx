@@ -12,7 +12,7 @@ var Nav = React.createClass({
 render: function () {
 	return (
 		<div>
-		<nav className="navbar navbar-default">
+		<nav className="navbar navbar-inverse">
 		  <div className="container-fluid">
 		    <div className="navbar-header">
 		      <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -38,7 +38,7 @@ render: function () {
 		      <form onSubmit={this.onSearch} className="navbar-form navbar-right">
 		        <div className="form-group">
 		          <input type="search" className="form-control" placeholder="Search Weather"/>
-		        <input type="submit" className="btn btn-default" value="Get Weather"/>
+		        	<input type="submit" className="btn btn-info" value="Get Weather"/>
 		         </div>
 		      </form>
 

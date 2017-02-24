@@ -26946,11 +26946,23 @@
 			null,
 			React.createElement(Nav, null),
 			React.createElement(
+				"div",
+				{ className: "container-fluid" },
+				React.createElement(
+					"div",
+					{ className: "row" },
+					React.createElement(
+						"div",
+						{ className: "col-lg-6 col-centered" },
+						props.children
+					)
+				)
+			),
+			React.createElement(
 				"h2",
 				null,
 				"Main Component"
-			),
-			props.children
+			)
 		);
 	};
 
@@ -26983,7 +26995,7 @@
 				null,
 				React.createElement(
 					"nav",
-					{ className: "navbar navbar-default" },
+					{ className: "navbar navbar-inverse" },
 					React.createElement(
 						"div",
 						{ className: "container-fluid" },
@@ -27047,7 +27059,7 @@
 									"div",
 									{ className: "form-group" },
 									React.createElement("input", { type: "search", className: "form-control", placeholder: "Search Weather" }),
-									React.createElement("input", { type: "submit", className: "btn btn-default", value: "Get Weather" })
+									React.createElement("input", { type: "submit", className: "btn btn-info", value: "Get Weather" })
 								)
 							)
 						)
@@ -28771,19 +28783,53 @@
 
 	var React = __webpack_require__(2);
 
+	var _require = __webpack_require__(188),
+	    Link = _require.Link;
+
 	var Examples = function Examples(props) {
 		return React.createElement(
 			"div",
 			null,
 			React.createElement(
-				"h3",
-				null,
+				"h1",
+				{ className: "text-center" },
 				"Example"
 			),
 			React.createElement(
 				"p",
 				null,
-				"Welcome to the Example Page"
+				"Here are a few example locations to try out"
+			),
+			React.createElement(
+				"ol",
+				null,
+				React.createElement(
+					"li",
+					null,
+					React.createElement(
+						Link,
+						{ to: "/?location=New York City" },
+						"New York City"
+					)
+				),
+				React.createElement(
+					"li",
+					null,
+					React.createElement(
+						Link,
+						{ to: "/?location=Los Angeles" },
+						"Los Angeles"
+					)
+				),
+				React.createElement(
+					"li",
+					null,
+					React.createElement(
+						Link,
+						{ to: "/?location=San Francisco" },
+						"San Francisco"
+					)
+				)
 			)
 		);
 	};
