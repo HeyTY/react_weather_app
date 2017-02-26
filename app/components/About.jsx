@@ -12,7 +12,6 @@ var About = (props) => {
 					<li>React</li>
 					<li>Node</li>
 					<li>Express</li>
-					<li>Foundation</li>
 				</ul>
 			</div>
 	)
